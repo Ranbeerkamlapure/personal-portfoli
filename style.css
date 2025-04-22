@@ -1,0 +1,165 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    justify-content: space-between;
+  }
+  
+  /* Sidebar styles */
+  aside {
+    width: 280px;
+    background-color: #2d3b55;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  aside header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  aside h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  aside p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .image-frame {
+    width: 170px;
+    height: 170px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 50%;  /* Makes the image circular */
+    border: 5px solid #ff7f50; /* Stylish frame with coral orange border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the frame without distortion */
+    border-radius: 50%; /* Make sure the image itself is also circular */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff7f50;
+  }
+  
+  /* Main content styles */
+  main {
+    width: calc(100% - 320px);
+    padding: 30px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  header h2 {
+    font-size: 2rem;
+    color: #2d3b55;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff7f50;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    color: #2d3b55;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    background-color: #2d3b55;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    aside {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    /* Adjusting image size for smaller screens */
+    .image-frame {
+      width: 170px;
+      height: 170px;
+    }
+  
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
